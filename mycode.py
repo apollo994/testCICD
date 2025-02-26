@@ -9,12 +9,11 @@
 # the command above downloads all SAR genomes and annotations
 # with the specified carachteristics 
 
-import pandas as pd
-import json
 import argparse
 import os
 import shutil
 from glob import glob
+import pandas as pd
 
 def unpack_nested_columns(dataframe, column_name):
     """Unpack a nested JSON column in a DataFrame."""
